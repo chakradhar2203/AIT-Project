@@ -308,4 +308,30 @@ ul li{
     text-align: center;
   }
 }
+/*To add remove button responsive*/
+@media (max-width: 768px) {
+  .cart-item {
+    position: relative;
+    padding-top: 2.5rem; /* Ensures space for the remove button */
+  }
+
+  .cart-item .remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    bottom: auto;
+  }
+
+  .cart-item .remove i {
+    font-size: 20px;
+    color: #333;
+    transition: transform 0.2s ease;
+  }
+
+  .cart-item .remove:hover i {
+    color: crimson;
+    transform: scale(1.2);
+  }
+}
 
