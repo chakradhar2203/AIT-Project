@@ -143,7 +143,115 @@ cards i {
 span{
     color:gold;
 }
+/* Plus Button */
+.plus i,
+.items i.fa-plus,
+.items1 i.fa-plus {
+    /* background-color:grey; */
+    /* color: white; */
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 6px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.plus i:hover,
+.items i.fa-plus:hover,
+.items1 i.fa-plus:hover {
+    background-color: #004aad;
+}
 
+/* Heart Icon */
+.items i.fa-heart,
+.items1 i.fa-heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #bbb;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Hide heart icon by default */
+/* Hide all heart icons by default */
+.sofa i.fa-heart,
+.armchair i.fa-heart,
+.ph .items.fa-heart,.bs i.fa-heart,
+.lastone .ph10 i.fa-heart {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show heart icon when hovering over card */
+.sofa:hover i.fa-heart,
+.armchair:hover i.fa-heart,
+.ph:hover i.fa-heart,
+.bs:hover i.fa-heart,
+.lastone .ph10:hover i.fa-heart {
+  opacity: 1;
+}
+.items i.fa-heart:hover,
+.items1 i.fa-heart:hover,
+.lastone i.fa-heart:hover {
+  color: red; 
+}
+
+/* Last One Section */
+.lastone {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.lastone .ph10 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  max-width: 300px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.lastone img {
+  width: 100%;
+  max-width: 245px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Positioning for plus icon in .lastone */
+.lastone .plus-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: lightgrey;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lastone .plus-icon:hover {
+  background-color: #004aad;
+}
+
+/* Positioning for heart icon in .lastone */
+.lastone .heart-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #bbb;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 
 
@@ -154,9 +262,7 @@ footer{
     color: white;
     grid-template-columns:25% 75%;
     margin-top: 20px;
-    padding-top: 50px;
-    padding-bottom: 75px;
-   
+    ppadding: 50px 100px;
     background-color: rgb(18, 51, 108);
 }
 footer div{
@@ -168,19 +274,25 @@ footer div{
 .content{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    margin-inline-start: 0px;
-    /* padding-inline-start: 90px; */
     
 }
-.titles{
-    margin-bottom: 10px;
+footer ul {
+    list-style: none;
+    padding: 0;
 }
-ul li{
+footer h2.titles{
+    margin-bottom: 15px;
+}
+ footer ul li{
     padding-bottom: 5px;
     color: lightsteelblue;
 }
-.adress p{
+footer p{
     /* line-height: 0.7cm; */
     margin-top: 8px;
     color: lightsteelblue;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
