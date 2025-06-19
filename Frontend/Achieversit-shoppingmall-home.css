@@ -1,6 +1,9 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   font-family: sans-serif;
 }
 header{
     display: flex;
@@ -227,16 +230,17 @@ span{
 
 /* Positioning for plus icon in .lastone */
 .lastone .plus-icon {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: lightgrey;
-  color: white;
-  font-size: 20px;
-  border-radius: 50%;
-  padding: 6px 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid grey;
+    /* color: white; */
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 3px 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .lastone .plus-icon:hover {
@@ -296,3 +300,57 @@ footer p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.sofa p, .armchair p,.ph p,.bs p, .lastone p,.ph10 p{
+  font-size: 25px;
+}
+
+
+/*responsive code  */
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .items, .items1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .intro {
+        text-align: center;
+        padding-top: 30px;
+    }
+    .items, .items1 {
+        grid-template-columns: 1fr;
+    }
+    .container, .container1 {
+        padding: 0 20px;
+    }
+    cards {
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+  .lastone {
+    padding: 20px 10px;
+  }
+}
+
