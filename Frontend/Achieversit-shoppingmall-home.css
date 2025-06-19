@@ -108,7 +108,7 @@ cards i {
 
 }
 /* offer section */
-.offer p {
+.sofa h5 ,.armchair h5{
   background-color: blue; 
   color: white;
   padding: 4px 10px;
@@ -124,7 +124,7 @@ cards i {
   
 }
 .armchair .image img{
-  width: 150px;
+  width: 164px;
 }
 .items img,
 .items1 img {
