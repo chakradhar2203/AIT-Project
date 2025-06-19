@@ -23,89 +23,66 @@ nav ul li a {
     text-decoration: none;
     color: #333;
 }
-
+/*for corosol  */
 main{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
-    margin-left:300px;
+    padding: 50px 100px;
+    gap:50px;
     
 
 }
 .intro{
    padding-top: 230px;
-   margin-right: 200px;
 }
+
 cards{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap:20px;
     text-align: center;
-    margin-inline: 50px;
+    margin: 40px 50px;
 
 }
-.car{
-    margin-left: 15px;
-    /* margin-left: 40px; */
+cards div {
+    padding: 50px 0;
+    border-radius: 10px;
+}
+.car {
     background-color: bisque;
-    padding:70px 0px;
-    /* gap:10px */
 }
-.car h3,.car i,.car p{
-    margin-bottom: 25px;
-}
-.car i{
-    /* border:1px solid red; */
-    padding: 20px;
-    border-radius: 38px;
-    background-color: rgba(240, 255, 255, 0.653);
-}
-
-.pay{
-    /* margin-left: 40px; */
-    margin-left: 15px;
+.pay {
     background-color: lightblue;
-    padding:75px 0px
-    /* gap:10px */
 }
-.pay h3,.pay i,.pay p{
-    margin-bottom: 10px;
-}
-
-.shield{
-    /* margin-left: 40px; */
-    margin-left: 15px;
+.shield {
     background-color: lightgreen;
-    padding:75px 0px
-    /* gap:10px */
 }
-.shield h3,.shield i,.shield p{
-    margin-bottom: 10px;
-}
-
-.headphones{
-    /* margin-left: 40px; */
-    margin-left: 15px;
+.headphones {
     background-color: lavender;
-    padding:75px 0px
-    /* gap:10px */
 }
-.headphones h3,.headphones i,.headphones p{
+cards i {
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 50%;
     margin-bottom: 10px;
 }
-/* container styling */
-.container div img{
-    width: 263px;
-    object-fit: contain;
-}
-.container{
-    margin-inline: 150px;
 
+/* Section Titles */
+.container h2,
+.container1 h2 {
+    
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
-.container h2{
-    text-align: center; 
-    padding:10px;
+
+/* Items Grid */
+.container, .container1 {
+    padding: 0 200px;
+    
 }
-.items{
+.items,.items1{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     /* border: 2px solid red; */
