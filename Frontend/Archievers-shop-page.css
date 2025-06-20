@@ -14,8 +14,8 @@ header{
     padding-inline-start: 100px;
     
 }
-header nav i:hover{
-  color: #1d4ed8;
+header nav i:hover, header nav ul li a:hover {
+  color: #000099;
 }
 div img{
     padding-block-start: 31px;
@@ -30,8 +30,10 @@ nav ul{
 ul{
     list-style: none;
 }
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
 .banner-image{
@@ -186,7 +188,7 @@ span{
     color: gold;
 }
 .bs4 img{
-    margin:20px 10px
+    margin:20px 10px;
 }
 
 /* Hover effect for plus icon */
